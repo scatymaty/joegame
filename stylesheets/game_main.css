@@ -1,0 +1,82 @@
+.main__game_container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 110vh;
+  background: linear-gradient(0deg, #754b21 49%, #2381e3 50%);
+}
+
+.bg_container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  min-height: 320px;
+}
+
+.main__tree_bg1 {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  height: 100%;
+}
+
+.main__tree_bg2 {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  height: 100%;
+}
+
+.main__score_container {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+}
+@media screen and (max-device-width: 992px) and (orientation: landscape) {
+  .main__score_container {
+    margin-top: 12vh;
+    margin-right: 2vh;
+  }
+}
+
+.main__score_title {
+  position: relative;
+  font-family: 'Berkelium Bitmap', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  color: white;
+  background: black;
+  padding: 0.5rem 0.5rem 0rem 0.5rem;
+}
+
+.main__score {
+  position: relative;
+  font-family: 'Berkelium Bitmap', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  background: black;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.main__paused {
+  position: absolute;
+  height: 50%;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Berkelium Bitmap', sans-serif;
+  font-size: 4vh;
+  text-align: center;
+  padding: 25% 2rem;
+}

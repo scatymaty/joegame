@@ -1,0 +1,37 @@
+.token {
+  position: absolute;
+  bottom: 45%;
+  right: -200px;
+  z-index: 1;
+}
+
+.token__container {
+  position: absolute;
+  width: fit-content;
+  align-items: center;
+  z-index: 1;
+}
+
+.token_img {
+  display: block;
+  margin: 0 auto;
+  width: 10vh;
+  padding: 0.1rem;
+}
+
+.token__text {
+  font-family: 'Berkelium Bitmap', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  overflow: hidden;
+  color: beige;
+}
+
+/* .bug {
+  position: absolute;
+  height: 10vh;
+  width: auto;
+  bottom: 25%;
+  right: -2000px;
+  z-index: 1;
+} */

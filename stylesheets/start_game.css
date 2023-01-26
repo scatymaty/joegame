@@ -1,0 +1,140 @@
+.start_game__screen {
+  position: relative;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.start_game__bg {
+  position: absolute;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.start_game__wrapper {
+  display: block;
+  height: 100vh;
+  overflow: auto;
+}
+
+.start_game__conatiner {
+  position: relative;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1vh;
+}
+@media only screen and (max-width: 992px) {
+  .start_game__conatiner {
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+@media only screen and (max-width: 451px) {
+  .start_game__conatiner {
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+@media screen and (max-device-width: 992px) and (orientation: landscape) {
+  .start_game__conatiner {
+    margin-top: 2rem;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+.start_game__title {
+  width: clamp(20rem, 80vw, 55rem);
+  height: auto;
+  margin-top: 2rem;
+  flex-shrink: 0;
+}
+@media only screen and (max-width: 451px) {
+  .start_game__title {
+    margin-top: 1rem;
+    width: clamp(15rem, 90vw, 90%);
+  }
+}
+@media screen and (max-device-width: 992px) and (orientation: landscape) {
+  .start_game__title {
+    margin-top: 2rem;
+    height: 40vh;
+    width: auto;
+  }
+}
+
+.start_game__buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1vh;
+  min-height: 15rem;
+}
+@media only screen and (max-width: 451px) {
+  .start_game__buttons {
+    min-height: 10rem;
+  }
+}
+@media screen and (max-device-width: 992px) and (orientation: landscape) {
+  .start_game__buttons {
+    min-height: 4rem;
+  }
+}
+
+.button_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.start_game_img {
+  width: auto;
+  height: clamp(3rem, 5vw, 5rem);
+  flex-shrink: 0;
+}
+
+.start_game__button_start {
+  border: none;
+  background: none;
+}
+
+.start_game__button_instructions {
+  border: none;
+  background: none;
+}
+
+.start_game__arrow {
+  display: none;
+  width: auto;
+  height: clamp(1.2rem, 2vw, 5rem);
+  flex-shrink: 0;
+}
+
+.start_screen__text {
+  color: white;
+  font-family: 'Berkelium Bitmap', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  margin: 2rem;
+}
+@media only screen and (max-width: 992px) {
+  .start_screen__text {
+    display: none;
+  }
+}
+@media screen and (max-device-width: 992px) and (orientation: landscape) {
+  .start_screen__text {
+    display: none;
+  }
+}

@@ -1,0 +1,38 @@
+:root {
+  --primary-text: #679bf1;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  /* border: 1px solid blue; */
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: unset;
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  margin: 0 auto;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: black;
+}
+@media screen and (max-device-width: 992px) and (orientation: landscape) {
+  body {
+    margin-top: -12vh;
+    background: linear-gradient(0deg, #2381e3 49%, #754b21 50%);
+  }
+}
